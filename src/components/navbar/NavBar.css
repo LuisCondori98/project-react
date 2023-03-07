@@ -1,0 +1,39 @@
+body {
+    background-color:lightgray;
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.NavBar h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.NavItems {
+    display: flex;
+    gap: 25px;
+}
+
+.NavItems button {
+    width: 90px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.NavItems button:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+.container-counter {
+    background-color: white;
+}
