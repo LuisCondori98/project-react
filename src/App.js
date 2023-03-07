@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer greetinging={"Bienvenido a mi tienda online"}/>
+      <ItemListContainer greetinging={"Bienvenido a mi tienda"}/>
       {/* <Counter title={"manzanas"} initial={0} stock={5}/>
       <Counter title={"naranjas"} initial={0} stock={6}/> */}
     </div>
