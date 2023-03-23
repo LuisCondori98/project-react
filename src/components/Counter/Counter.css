@@ -1,0 +1,23 @@
+.counter {
+    display: "flex";
+    justify-content: center;
+}
+
+.counter h2 {
+    background-color: rgb(172, 0, 0);
+    border-radius: 15px;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 102vh;
+    left: 35vh;
+    padding: 5px;
+}
+
+.counter h2:hover {
+    background-color: white;
+}
+
+.counter h2::after {
+    content: " !";
+}

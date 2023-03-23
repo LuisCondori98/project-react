@@ -1,0 +1,14 @@
+.item-detail {
+    display: block;
+    text-align: center;
+}
+
+.item-detail img{
+    height: 230px;
+    margin: auto;
+    transition: all .4s ease-in-out;
+}
+
+.item-detail img:hover{
+    transform: scale(1.17);
+}

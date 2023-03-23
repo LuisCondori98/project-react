@@ -3,14 +3,14 @@ import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
     return (
-        <nav className="NavBar">
+        <nav className="navbar">
             <h1>Steelshet</h1>
-            <div className="NavItems">
-                <button>Inicio</button>
-                <button>Productos</button>
-                <button>Servicios</button>
-                <button>Contacto</button>
-            </div>
+            <ul className="navbar-list">
+                <li><a>Inicio</a></li>
+                <li><a>Productos</a></li>
+                <li><a>Servicios</a></li>
+                <li><a>Contacto</a></li>
+            </ul>
             <CartWidget />
         </nav>
     )

@@ -1,10 +1,10 @@
 import iCarrito from "./icarrito.png"
+import "./CartWidget.css"
 
 const CartWidget = () => {
     return  (
-        <div style={{color: "white", fontSize: "25px"}}>
-            <img src={iCarrito} alt="icono-carrito" style={{height: "25px", width: "25px"}} />
-            {3}
+        <div className="i-carrito">
+            <img src={iCarrito} alt="icono-carrito"/>{0}
         </div>
     )
 }

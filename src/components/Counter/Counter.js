@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Button from '../Button/Button'
+import "./Counter.css"
 
 const Counter = (props) => {
     const [count, setCount] = useState(props.initial)
@@ -10,7 +11,7 @@ const Counter = (props) => {
         if(count > 0) {
             setCount(count - 1)
         } else {
-            setMessage('No puede comprar menos de 1')
+            setMessage('No puedes agregar menos de 0')
         }
     }
 
@@ -23,23 +24,24 @@ const Counter = (props) => {
         }
     }
 
-    const reset = () => {
+    const delet = () => {
         setCount(props.initial)
         setMessage('')
     }
 
     return (
-        <div>
-            <h1>{props.title}</h1>
-            <h2>{count}</h2>
-            <h3>Cantidad disponible: {props.stock}</h3>
-            <Button label=" - " handleClick={decrement}/>
-            <Button label=" + " handleClick={increment}/>
-            <Button label="Eliminar" handleClick={reset}/>
-            {/* <button onClick={decrement}>restar</button>
-            <button onClick={increment}>sumar</button>
-            <button onClick={reset}>reiniciar</button> */}
-            <h2 style={{color: 'red'}}>{message}</h2>
+        <div className='counter'>
+                <h1>{props.title}</h1>
+                <h5>Cantidad disponible: {props.stock}</h5>
+                <h4>{count}</h4>
+                <h2>{message}</h2>
+                <Button label="Eliminar" handleClick={delet}/>
+                <Button label=" - " handleClick={decrement}/>
+                <Button label=" + " handleClick={increment}/>
+                <Button label="Agregar" />
+                {/* <button onClick={decrement}>restar</button>
+                <button onClick={increment}>sumar</button>
+                <button onClick={reset}>reiniciar</button> */}
         </div>
     )
 }
