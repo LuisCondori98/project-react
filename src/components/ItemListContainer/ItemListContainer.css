@@ -1,8 +1,11 @@
 .itemListContainer {
     text-align: center;
-    padding: 5px;
 }
 
-.itemListContainer h2 {
-    font-size: 18px;
+.container-loading {
+    height: 85vh;
+    background-image: url("https://media.tenor.com/BtC0jVjzYToAAAAC/loading-chain.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
 }

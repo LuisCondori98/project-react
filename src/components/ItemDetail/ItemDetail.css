@@ -1,14 +1,54 @@
-.item-detail {
-    display: block;
+.container-loading-detail {
+    height: 80vh;
+    background-image: url("https://media.tenor.com/BtC0jVjzYToAAAAC/loading-chain.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+}
+
+.container-detail-info {
     text-align: center;
+    line-height: 50px;
 }
 
-.item-detail img{
-    height: 230px;
-    margin: auto;
+.container-detail-info h2 {
+    font-size: 32px;
+    margin: 15px 0px;
+}
+
+.detail-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.detail-info img {
+    height: 380px;
     transition: all .4s ease-in-out;
+    filter:grayscale(100%);
 }
 
-.item-detail img:hover{
-    transform: scale(1.17);
+.detail-info img:hover {
+    transform: scale(1.19);
+    filter:grayscale(0);
+}
+
+.detail-info-items {
+    line-height: 40px;
+}
+.detail-info-items h3 {
+    font-size: 22px;
+}
+
+.detail-info-items .desc {
+    width: 420px;
+}
+
+.link .link-button {
+    background-color: rgb(255, 179, 39);
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    margin: 0px 20px;
+    padding: 5px;
 }

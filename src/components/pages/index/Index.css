@@ -1,0 +1,39 @@
+.container {
+    text-align: center;
+    overflow: hidden;
+}
+
+.container .container-banner {
+    background-image: url("/public/images/banner.jpg");
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+@keyframes slide {
+    0%{
+        transform: scale(1.5);
+    }
+}
+
+.container .container-banner .banner-logo{
+    height: 300px;
+    margin: 0px 30px;
+    animation: slide 2s;
+    margin: 0px 60px;
+    position: relative;
+}
+
+.container .container-video {
+    background-color: black;
+}
+
+.container .container-video video {
+    height: 720px;
+    transition: all 0.3s ease-in-out;
+    filter: grayscale(50%);
+}

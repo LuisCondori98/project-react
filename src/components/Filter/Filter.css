@@ -2,23 +2,30 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-    background-color: rgb(12, 12, 12);
-    padding: 7px;
+    padding: 10px;
+    font-size: 26px;
+    background-color: #3FABAF;
+    border: black solid 3px;
+    margin: 0px 120px;
 }
 
 .ActiveLink {
-    text-decoration: overline;
-    color: white;
-    padding: 5px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .Link {
-    color: white;
-    padding: 5px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
 }
 
 .Link:hover{
-    text-decoration: overline;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     background-color: white;
     color: black;
 }

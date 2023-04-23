@@ -1,0 +1,41 @@
+.footer-i {
+    background-color:#d8d89b;
+    border-top: black solid 2px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.redes {
+    background-color:#84844b;
+    text-align: center;
+    padding: 10px;
+}
+
+.bancos .i-banco {
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
+}
+
+.redes .redes-item {
+    height: 40px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.redes .redes-item:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: 100;
+}

@@ -1,7 +1,35 @@
 .i-carrito {
     color: white;
+    display: flex;
+    align-items: start;
+    text-align: center;
 }
 
 .i-carrito img {
-    height: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+.i-carrito .null {
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 15px;
+}
+
+.i-carrito .red {
+    background-color: red;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+    animation: sliders .3s ;
+    font-size: 15px;
+}
+
+@keyframes sliders {
+    0% {
+        transform: scale(1.3);
+    }
 }
