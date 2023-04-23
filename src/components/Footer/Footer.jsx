@@ -11,7 +11,7 @@ const Footer = () => {
                     <img className="i-banco" src="../../images/plin-logo.png" />
                     <img className="i-banco" src="../../images/yape-logo.png" />
                 </div>
-                <div>
+                <div className="horarios">
                     <ul style={{lineHeight: "25px"}}>
                         <li><h3>Horario de atencion</h3></li>
                         <li><h3>Lunes - Viernes:</h3></li>

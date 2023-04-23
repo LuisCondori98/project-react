@@ -44,3 +44,9 @@
 .navbar-list .list-item:hover {
     text-decoration: overline;
 }
+
+@media (max-width: 480px) {
+    .navbar-list {
+        display: none;
+    }
+}

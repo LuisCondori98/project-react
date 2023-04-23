@@ -1,41 +1,85 @@
-.footer-i {
-    background-color:#d8d89b;
-    border-top: black solid 2px;
+@media (min-width: 1200px) {
+    .footer-i {
+        background-color:#d8d89b;
+        border-top: black solid 2px;
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .redes {
+        background-color:#84844b;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .bancos .i-banco {
+        height: 50px;
+        width: 50px;
+        margin: 0px 10px;
+    }
+
+    .redes .redes-item {
+        height: 40px;
+        margin: 0px 15px;
+        cursor: pointer;
+    }
+
+    .redes .redes-item:hover {
+        transform: scale(1.1);
+    }
+
+    .copyright {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-weight: 100;
+    }
 }
 
-.container-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
+@media (max-width: 480px) {
+    .footer-i {
+        background-color: #d8d89b;
+        text-align: center;
+    }
 
-.redes {
-    background-color:#84844b;
-    text-align: center;
-    padding: 10px;
-}
+    .container-footer {
+        padding: 20px;
+    }
 
-.bancos .i-banco {
-    height: 50px;
-    width: 50px;
-    margin: 0px 10px;
-}
+    .container-footer .bancos {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
 
-.redes .redes-item {
-    height: 40px;
-    margin: 0px 15px;
-    cursor: pointer;
-}
+    .container-footer .bancos .i-banco {
+        height: 40px;
+    }
 
-.redes .redes-item:hover {
-    transform: scale(1.1);
-}
+    .horarios {
+        margin: 20px 0px;
+    }
 
-.copyright {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-weight: 100;
+    .redes {
+        background-color: #84844b;
+    }
+
+    .redes .redes-item {
+        margin: 0px 10px;
+        height: 50px;
+        padding: 7px;
+    }
+
+    .copyright {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        font-size: 17px;
+    }
 }
