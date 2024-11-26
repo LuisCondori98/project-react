@@ -5,7 +5,7 @@ import "./Index.css"
 
 const Index = () => {
     return (
-        <div className="container">
+        <div className="containers">
             <TextEmergente />
             <div className="container-banner">
                 <img src="../../images/logo.png" alt="logo" className="banner-logo"/>

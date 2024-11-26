@@ -1,52 +1,15 @@
-@keyframes animations {
-    0% {
-        transform: scale(1.2);
-    }
-
-    25% {
-        transform: scale(0.9);
-    }
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    padding: 12px;
-}
-
-.navbar .navbar-title {
+.navbar-title {
     font-size: 55px;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
     cursor: pointer;
     font-family: 'Permanent Marker', cursive;
 }
 
-.navbar .navbar-title:hover {
+.navbar-title:hover {
     animation: animations 2s;
 }
 
-.navbar-list {
-    display: flex;
-    gap: 25px;
-}
-
-.navbar-list .list-item {
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    border: black solid;
-    cursor: pointer;
-    font-size: 23px;
-}
-
-.navbar-list .list-item:hover {
-    text-decoration: overline;
-}
-
 @media (max-width: 480px) {
-    .navbar-list {
-        display: none;
-    }
+
 }

@@ -1,10 +1,10 @@
 @media (min-width: 1200px) {
-    .container {
+    .containers {
         text-align: center;
         overflow: hidden;
     }
 
-    .container .container-banner {
+    .containers .container-banner {
         background-image: url("/public/images/banner.jpg");
         background-position:right;
         background-repeat: no-repeat;
@@ -21,7 +21,7 @@
         }
     }
 
-    .container .container-banner .banner-logo{
+    .containers .container-banner .banner-logo{
         height: 300px;
         margin: 0px 30px;
         animation: slide 2s;
@@ -29,11 +29,11 @@
         position: relative;
     }
 
-    .container .container-video {
+    .containers .container-video {
         background-color: black;
     }
 
-    .container .container-video video {
+    .containers .container-video video {
         height: 720px;
         transition: all 0.3s ease-in-out;
         filter: grayscale(50%);
@@ -41,7 +41,7 @@
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-    .container .container-banner {
+    .containers .container-banner {
         background-image: url("/public/images/banner.jpg");
         background-size: cover;
         background-position: right;
@@ -52,15 +52,15 @@
         align-items: center;
     }
 
-    .container .container-banner .banner-logo{
+    .containers .container-banner .banner-logo{
         height: 120px;
     }
 
-    .container .container-video {
+    .containers .container-video {
         background-color: black;
     }
 
-    .container .container-video video {
+    .containers .container-video video {
         height: 220px;
         transition: all 0.3s ease-in-out;
         filter: grayscale(50%);
