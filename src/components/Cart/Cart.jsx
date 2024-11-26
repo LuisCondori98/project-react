@@ -30,7 +30,7 @@ if(totalQuantity <= 0)
           cart.map(prod => {
             return (
                 <div key={prod.id} className="cart-detail">
-                    <img style={{height: "140px"}} src={prod.img}/> <h5>{prod.name}</h5> <h5>S/. {prod.price}</h5> <h5>Cantidad:  {prod.quantity}</h5>
+                    <img src={prod.img}/> <h5>{prod.Nombre}</h5> <h5>S/. {prod.Precio}</h5> <h5>Cantidad:  {prod.quantity}</h5>
                 </div>
             )
         })

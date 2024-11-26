@@ -20,7 +20,7 @@ const Footer = () => {
                         <li><h3>10:00 am - 16:00 pm</h3></li>
                     </ul>
                 </div>
-                <img src="../../images/logo.png" alt="logo" style={{height: "170px"}} />
+                <img src="https://firebasestorage.googleapis.com/v0/b/my-web-6e66e.appspot.com/o/img%2Flogo.png?alt=media&token=5962cda6-557b-4980-bcd8-125cf99fb416" style={{backgroundColor: "white", borderRadius: "50%", height: "170px", padding: "5px"}} alt="logo" />
             </div>
             <div className="redes">
                 <a href="https://www.facebook.com/profile.php?id=100091932811246" target="blank"><img className="redes-item" src="../../images/i-face.png" alt="facebook" /></a>
@@ -28,7 +28,7 @@ const Footer = () => {
                 <img className="redes-item" src="../../images/i-whatsapp.png" alt="whatsapp" />
                 <img className="redes-item" src="../../images/i-twitter.png" alt="twitter" />
             </div>
-            <h3 className="copyright">Todos los derechos reservados © 2023 - SteelEcht</h3>
+            <h3 className="copyright">Todos los derechos reservados © 2023 - City Shop</h3>
         </footer>
     )
 }

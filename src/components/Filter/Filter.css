@@ -2,16 +2,16 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 10px;
+    padding: 5px;
     font-size: 26px;
-    background-color: #3FABAF;
-    border: black solid 3px;
+    background-color: #eb671a;
+    border: black solid 2px;
     margin: 0px 120px;
 }
 
 .ActiveLink {
     color: rgb(0, 0, 0);
-    padding: 10px;
+    padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 5px;
     background-color: white;
@@ -19,7 +19,7 @@
 
 .Link {
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 5px;
     transition: all .3s ease-in-out;
     border-radius: 5px;
 }

@@ -5,9 +5,11 @@ const Filter = () => {
     return (
         <div className="container-filter">
             <NavLink className={({isActive}) => isActive? "ActiveLink" : "Link"} to="/category/bicicleta">Bicicletas</NavLink>
-            <NavLink className={({isActive}) => isActive? "ActiveLink" : "Link"} to="/category/prenda">Ropa</NavLink>
-            <NavLink className={({isActive}) => isActive? "ActiveLink" : "Link"} to="/category/componente">Componentes</NavLink>
-            <NavLink className={({isActive}) => isActive? "ActiveLink" : "Link"} to="/category/accesorio">Accesorios</NavLink>
+            <NavLink className={({isActive}) => isActive? "ActiveLink" : "Link"} to="/category/prenda">Ropas</NavLink>
+            <NavLink className={({isActive}) => isActive? "ActiveLink" : "Link"} to="/category/consolas">Consolas</NavLink>
+            <NavLink className={({isActive}) => isActive? "ActiveLink" : "Link"} to="/category/celular">Celulares</NavLink>
+            <NavLink className={({isActive}) => isActive? "ActiveLink" : "Link"} to="/category/laptop">Laptops</NavLink>
+            <NavLink className={({isActive}) => isActive? "ActiveLink" : "Link"} to="/category/tv">Televisores</NavLink>
         </div>
     )
 }

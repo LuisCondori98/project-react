@@ -10,7 +10,7 @@ const CartWidget = () => {
 
     return  (
         <div className="i-carrito">
-            <img src="../../images/icarrito.png" alt="icono-carrito" onClick={() => navigate("/cart")}/>
+            <i className="bi bi-cart4" onClick={() => navigate("/cart")}></i>
             <h4 className={totalQuantity > 0 ? "red" : "null"}>
                 {totalQuantity}
             </h4>

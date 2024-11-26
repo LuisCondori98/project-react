@@ -4,14 +4,14 @@ import ItemCount from '../ItemCount/ItemCount'
 import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 
-const ItemDetail = ({ id, name, img, description, price, stock }) => {
+const ItemDetail = ({ id, Nombre, img, description, Precio, Stock }) => {
     const [quantity, setQuantity] = useState(0)
     const [loading, setLoading] = useState(true)
     const { addItem } = useContext(CartContext)
 
     const handleOnAdd = (quantity) => {
         const productToAdd = {
-            id, name, price, quantity, img
+            id, Nombre, Precio, quantity, img
         }
         setQuantity(quantity)
         addItem(productToAdd)
@@ -27,14 +27,14 @@ const ItemDetail = ({ id, name, img, description, price, stock }) => {
     }
     
     return (
-        <div className='container-detail-info'>
-            <h2>{name}</h2>
+        <div className='container-detail-info' style={{paddingTop: "40px"}}>
             <div className='detail-info'>
-                <img src={img}/>
+                <img src={img} alt={img} />
                 <div className='detail-info-items'>
-                    <h3 className='desc'>Descripcion: {description}</h3>
-                    <h3>Precio: S/.{price}</h3>
-                    <h3>Stock: {stock}</h3>
+                    <h2><strong>{Nombre}</strong></h2>
+                    <h3 className='desc'><strong>Descripcion:</strong> {description}</h3>
+                    <h3><strong>Precio:</strong> S/.{Precio}</h3>
+                    <h3><strong>Stock:</strong> {Stock}</h3>
                     {
                     quantity > 0 ?
                     <div className='link'>
@@ -42,7 +42,7 @@ const ItemDetail = ({ id, name, img, description, price, stock }) => {
                         <Link to="/cart" className='link-button'>Ir al carrito</Link>                        
                     </div>
                     :
-                    <ItemCount onAdd={handleOnAdd} stocks={stock}/>
+                    <ItemCount onAdd={handleOnAdd} stocks={Stock}/>
                     }
                 </div>
             </div>

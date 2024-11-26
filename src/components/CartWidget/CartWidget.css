@@ -3,11 +3,21 @@
     display: flex;
     align-items: start;
     text-align: center;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.bi {
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
 }
 
 .i-carrito img {
     height: 30px;
     cursor: pointer;
+    color: black;
 }
 .i-carrito .null {
     width: 22px;
@@ -31,5 +41,13 @@
 @keyframes sliders {
     0% {
         transform: scale(1.3);
+    }
+}
+
+@media (max-width: 992px) {
+
+    .i-carrito {
+        top: 30px;
+        right: 12px;
     }
 }

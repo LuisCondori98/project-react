@@ -41,8 +41,8 @@ const handleConfirm = (e) => {
                     cart.map(prod => {
                         return (
                             <div key={prod.id} style={{display: "flex", justifyContent: "center", gap: "50px"}}>
-                                <h3>{prod.name}</h3>
-                                <h3>S/.{prod.price}</h3>
+                                <h3>{prod.Nombre}</h3>
+                                <h3>S/.{prod.Precio}</h3>
                                 <h3>{prod.quantity}u</h3>
                             </div>
                         )

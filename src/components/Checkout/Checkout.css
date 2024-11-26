@@ -53,3 +53,15 @@
     padding: 3px;
     font-size: 18px;
 }
+
+@media(max-width: 992px) {
+    .formulario-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .formulario-container-info {
+        width: 100%;
+        height: auto;
+    }
+}
