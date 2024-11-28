@@ -6,6 +6,7 @@ import Filter from "../Filter/Filter"
 import { getDocs, collection, query, where } from "firebase/firestore"
 import { db } from "../services/firebase/firebaseConfig";
 import Whatsapp from "../Whatsapp/Whatsapp"
+import TextEmergente from "../TextEmergente/TextEmergente";
 
 const ItemListContainer = ({ greeting}) => {
     const [productsState, setProductsState] = useState([])
@@ -40,6 +41,7 @@ const ItemListContainer = ({ greeting}) => {
 
     return (
         <div className="itemListContainer">
+            <TextEmergente />
             <h2 style={{padding: 10}}>{greeting}</h2>
             <Filter />
             <ItemList products={productsState}/>

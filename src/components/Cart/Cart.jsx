@@ -1,11 +1,26 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext"
 import { useNavigate } from "react-router-dom"
 import "./Cart.css"
 
 const Cart = () => {
 
+const [cupon, setCupon] = useState("")
+const [newTotal, setNewTotal] = useState(0)
 const {cart, total, totalQuantity} = useContext(CartContext)
+
+const validar = () => {
+
+  if(cupon == "LUISCO10") {
+
+    setNewTotal(total - 10)
+  }else {
+
+    setNewTotal(0)
+  }
+
+  console.log("ingreso cupon " + cupon)
+}
 
 const navegacion = useNavigate()
 if(totalQuantity <= 0)
@@ -39,13 +54,14 @@ if(totalQuantity <= 0)
       <div>
           <div className='cupon'>
             <h3>Ingrese codigo de cupon:</h3>
-            <input type='text' />
-            <button type="submit" style={{margin: "0px 20px", padding: "5px"}}>Validar</button>
+            <input type='text' onChange={(e) => setCupon(e.target.value)}/>
+            <button type="submit" onClick={() => validar()} style={{margin: "0px 20px", padding: "5px"}}>Validar</button>
           </div>
         {
           totalQuantity <= 0 ? <h3></h3> : 
           <div className="resumen">
             <h2>Resumen</h2>
+            <h3>Descuento S/. {newTotal}</h3>
             <h3 className="total">Total S/. {total}</h3>
             <button className="boton-fn" onClick={() => navegacion("/checkout")}
             >Finalizar compra</button>

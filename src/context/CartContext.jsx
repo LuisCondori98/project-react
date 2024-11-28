@@ -5,6 +5,8 @@ export const CartContext = createContext()
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
 
+
+
     const addItem = (productToAdd) => {
         if(!isInCart(productToAdd.id)) {
         setCart(prev => [...prev, productToAdd])
@@ -12,6 +14,9 @@ export const CartProvider = ({ children }) => {
             alert("producto ya esta agregado")
         }
     }
+
+    console.log(cart)
+    localStorage.setItem('cart', JSON.stringify(cart))
 
     const removeItem = (id) => {
         const cartUpdated =  cart.filter(prod => prod.id !== id)

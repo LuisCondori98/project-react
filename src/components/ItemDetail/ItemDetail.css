@@ -1,4 +1,4 @@
-@media (min-width: 992px) and (max-width: 1600px) {
+@media (min-width: 992px) {
     .container-loading-detail {
         height: 80vh;
         background-image: url("https://media.tenor.com/BtC0jVjzYToAAAAC/loading-chain.gif");

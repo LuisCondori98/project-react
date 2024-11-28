@@ -1,15 +1,24 @@
-.container-item {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
-    padding: 40px;
+@media (min-width: 992px) {
+
+    .container-item-lists {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 40px;
+        padding: 50px;
+    }
 }
 
-@media (max-width: 720px) {
+@media (min-width: 720px) {
 
-    .container-item {
+    .container-item-lists {
+        
+    }
+}
+
+@media (max-width: 480px)  {
+
+    .container-item-lists {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
-        padding: 12px;
     }
 }
