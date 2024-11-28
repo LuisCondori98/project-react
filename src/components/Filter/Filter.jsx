@@ -24,7 +24,7 @@ const Filter = () => {
         <div className="container-filter">
             <input class="form-control"  type="search" placeholder="Search" aria-label="Search" onChange={e => setBusqueda(e.target.value)}></input>
             <div className="filter-buttons">
-                <Link class="btn btn-success" to={"/productos"}>Todos los productos</Link>
+                <Link class="btn btn-success" to={"/productos"}>Todos</Link>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Categorias

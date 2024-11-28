@@ -4,7 +4,7 @@ import "./Item.css"
 const Item = ({id, img, Precio, Nombre}) => {
 
     return (
-        <div className="item">
+        <div className="item" data-aos="flip-left">
             <img src={img} alt={img} />
             <h4>{Nombre}</h4>
             <h5>S/. {Precio}</h5>

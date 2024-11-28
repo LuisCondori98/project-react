@@ -1,8 +1,19 @@
-.container-wp .wp-i {
-    position: fixed;
-    border-radius: 50%;
-    bottom: 50px;
-    right: 40px;
-    height: 80px;
-    width: 90px;
+@media (min-width: 992px) {
+    .container-wp .wp-i {
+        position: fixed;
+        border-radius: 50%;
+        bottom: 50px;
+        right: 40px;
+        height: 80px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-wp .wp-i {
+        position: fixed;
+        right: 5px;
+        height: 60px;
+        bottom: 5px;
+    }
 }

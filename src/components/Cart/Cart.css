@@ -113,3 +113,11 @@
         padding-top: 30px;
     }
 }
+
+@media(max-width: 480px) {
+
+    .cart-detail{
+        padding: 5px;
+        gap: 2px;
+    }
+}

@@ -6,6 +6,11 @@
         border-radius: 7px;
     }
 
+    .link {
+        color: black;
+        text-decoration: underline;
+    }
+
     .item:hover {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         transition: all ease-in-out .3s;
@@ -29,5 +34,10 @@
         height: 180px;
         width: 180px;
         object-fit: contain;
+    }
+
+    .link {
+        color: black;
+        text-decoration: underline;
     }
 }

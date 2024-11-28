@@ -36,7 +36,7 @@ const handleConfirm = (e) => {
                 <button type="submit" onClick={handleConfirm}>Generar pedido</button>
             </form>
             <div className="formulario-container-info">
-                <img src="../../images/logo.png"/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/my-web-6e66e.appspot.com/o/img%2Flogo.png?alt=media&token=5962cda6-557b-4980-bcd8-125cf99fb416" style={{backgroundColor: "white", borderRadius: "50%", height: "170px", padding: "5px"}} alt="logo" />
                 {
                     cart.map(prod => {
                         return (
