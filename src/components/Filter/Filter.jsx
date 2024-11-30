@@ -36,6 +36,8 @@ const Filter = () => {
                     <NavLink className={"dropdown-item"}/*className={({isActive}) => isActive? "ActiveLink" : "Link"}*/ to="/category/celular">Celulares</NavLink>
                     <NavLink className={"dropdown-item"}/*className={({isActive}) => isActive? "ActiveLink" : "Link"}*/ to="/category/laptop">Laptops</NavLink>
                     <NavLink className={"dropdown-item"}/*className={({isActive}) => isActive? "ActiveLink" : "Link"}*/ to="/category/tv">Televisores</NavLink>
+                    <NavLink className={"dropdown-item"}/*className={({isActive}) => isActive? "ActiveLink" : "Link"}*/ to="/category/audio">Audio</NavLink>
+                    <NavLink className={"dropdown-item"}/*className={({isActive}) => isActive? "ActiveLink" : "Link"}*/ to="/category/zapatillas">Zapatillas</NavLink>
                     </ul>
                 </div>
             </div>

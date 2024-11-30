@@ -19,6 +19,12 @@
     font-size: 22px;
 }
 
+.active {
+    background-color: black;
+    color: white !important;
+    border-radius: 7px;
+}
+
 @media (max-width: 480px) {
 
 }
