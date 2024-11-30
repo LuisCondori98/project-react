@@ -2,6 +2,11 @@ import { Link } from "react-router-dom"
 import "./Footer.css"
 
 const Footer = () => {
+
+    const date = new Date().getFullYear()
+
+    console.log(date)
+
     return (
         <footer className="footer-i">
             <div className="container-footer">
@@ -28,7 +33,7 @@ const Footer = () => {
                 <img className="redes-item" src="../../images/i-whatsapp.png" alt="whatsapp" />
                 <img className="redes-item" src="../../images/i-twitter.png" alt="twitter" />
             </div>
-            <h3 className="copyright">Todos los derechos reservados © 2023 - City Shop</h3>
+            <h3 className="copyright">Todos los derechos reservados © {date} - City Shop</h3>
         </footer>
     )
 }

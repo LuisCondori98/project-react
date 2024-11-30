@@ -26,13 +26,13 @@ const handleConfirm = (e) => {
             <form className="formulario">
                 <h2>Datos de cliente</h2>
                 <label>Nombres</label>
-                <input type="text" name="nombres" id="nombres" />
+                <input type="text" name="nombres" id="nombres" required/>
                 <label>Apellidos</label>
-                <input type="text" name="apellidos" id="apellidos" />
+                <input type="text" name="apellidos" id="apellidos" required/>
                 <label>e-mail</label>
-                <input type="text" name="email" id="email" />
+                <input type="text" name="email" id="email" required/>
                 <label>telefono</label>
-                <input type="tel" name="telefono" id="telefono" />
+                <input type="tel" name="telefono" id="telefono" required />
                 <button type="submit" onClick={handleConfirm}>Generar pedido</button>
             </form>
             <div className="formulario-container-info">
