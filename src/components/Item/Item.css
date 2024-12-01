@@ -23,7 +23,7 @@
     }
 
     .item img:hover {
-        transform: scale(0.95);
+        transform: scale(0.98);
         transition: all ease-in-out .4s;
     }
 }

@@ -27,13 +27,17 @@ const Footer = () => {
                 </div>
                 <img src="https://firebasestorage.googleapis.com/v0/b/my-web-6e66e.appspot.com/o/img%2Flogo.png?alt=media&token=5962cda6-557b-4980-bcd8-125cf99fb416" style={{backgroundColor: "white", borderRadius: "50%", height: "170px", padding: "5px"}} alt="logo" />
             </div>
+            <form className="suscripcion">
+                <input type="text" className="form-correo" name="" id="" placeholder="Ingrese Correo..." />
+                <input type="button" value="Suscribirse"  className="form-btn"/>
+            </form>
             <div className="redes">
                 <a href="https://www.facebook.com/profile.php?id=100091932811246" target="blank"><img className="redes-item" src="../../images/i-face.png" alt="facebook" /></a>
                 <img className="redes-item" src="../../images/i-insta.png" alt="instagram" />
                 <img className="redes-item" src="../../images/i-whatsapp.png" alt="whatsapp" />
                 <img className="redes-item" src="../../images/i-twitter.png" alt="twitter" />
             </div>
-            <h3 className="copyright">Todos los derechos reservados © {date} - City Shop</h3>
+            <h5 className="copyright">Todos los derechos reservados © {date} - City Shop</h5>
         </footer>
     )
 }
